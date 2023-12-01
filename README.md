@@ -1,6 +1,3 @@
-# organo-react-migration-ty
-Aplicação desenvolvida em React conforme orientações do curso React: migrando para TypeScript da plataforma Alura
-
 ![Integrando seu projeto React com APIs](thumbnail.png)
 
 # Organo

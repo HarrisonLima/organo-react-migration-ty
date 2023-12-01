@@ -8,7 +8,13 @@ interface CampoTextoProps {
   obrigatorio?: boolean;
 }
 
-const CampoTexto = ({ aoAlterado, label, placeholder, valor, obrigatorio = false} : CampoTextoProps) => {
+const CampoTexto = ({
+  aoAlterado,
+  label,
+  placeholder,
+  valor,
+  obrigatorio = false,
+}: CampoTextoProps) => {
   const placeholderModificada = `${placeholder}...`;
 
   const aoDigitado = (evento: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +26,7 @@ const CampoTexto = ({ aoAlterado, label, placeholder, valor, obrigatorio = false
       <label>{label}</label>
       <input
         value={valor}
-        onChange={ aoDigitado}
+        onChange={aoDigitado}
         required={obrigatorio}
         placeholder={placeholderModificada}
       />
